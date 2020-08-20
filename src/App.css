@@ -2,37 +2,87 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  width: 100vw;
+  height: 11vh;
+  background-color: rgb(52,165,218);
+  text-align: left;
+  padding: 10px;
+  align-items: center;
+  padding-left: 4%;
+}
+.header > h3{
+  margin-top: 20px;
+  /* font-size: large; */
+}
+
+.background-box{
+  width: 100vw;
+  height: 89vh;
+  background-color: rgb(34,34,34);
+  /* padding: 10%; */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding-top: 100px;
+}
+
+.profile-container{
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  padding-top: 35px;
+  margin: 15px;
+  
+}
+.previous-button{
+  background-color: transparent;
+  border: 0px;
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.next-button{
+  background-color: transparent;
+  border: 0px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
+
+.page-counter{
+  position: absolute;
+  top: 260px;
+  right: 200px;
+  font-size: 65px;
+  font-weight: bolder;
+}
+
+.profile-name{
+ border-bottom: 1px solid turquoise;
+ width: 150px;
+ word-wrap: inherit;
+}
+
